@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Stone Paper Scissors</h1>
+    <audio id="background-music" src="soundtracks/background.mp3" loop ></audio>
+    <audio id="win-sound" src="soundtracks/win.mp3"></audio>
+    <audio id="lose-sound" src="soundtracks/draw.mp3"></audio>
+    <audio id="draw-sound" src="soundtracks/draw.mp3"></audio>
+    <audio id="click-sound" src="soundtracks/move.mp3"></audio>
+
+    <div class="choices">
+        <div class="choice" id="rock"><img src="img/rock.png" alt=""></div>
+        <div class="choice" id="paper"><img src="img/paper.png" alt=""></div>
+        <div class="choice" id="scissors"><img src="img/scissors.png" alt=""></div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>YOU</p>
+
+        </div>
+        <div class="score">
+            <P id="comp-score">0</P>
+            <p>Comp</p>
+
+        </div>
+    </div>
+    <div class="sps_img">
+        <div class="userimg">
+            <div class="sps" id="usersps_rock"><img src="userstone.png" alt=""></div>
+            <div class="sps" id="usersps_paper"><img class="paper" src="user_paper.png" alt=""></div>
+            <div class="sps" id="usersps_scissors"><img src="user_scissors.png" alt=""></div>
+        </div>
+        <div class="compimg">
+            <div class="sps" id="compsps_rock"><img src="comp_stone.png" alt=""></div>
+            <div class="sps" id="compsps_paper"><img class="paper" src="comp_paper.png" alt=""></div>
+            <div class="sps" id="compsps_scissors"><img src="comp_scissors.png" alt=""></div>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play Your Move</p>
+    </div>
+    <div class="img">
+        <div id="draw">
+            <img src="draw.png" alt="">
+        </div>
+        <div id="win">
+            <img src="win.png" alt="">
+        </div>
+        <div id="lose">
+            <img src="lose.png" alt="">
+        </div>
+    </div>
+</body>
+<footer>
+    <p id="tag">Game Developed By Dsoft <a href="https://www.google.com/search?q=mayuresh+durgule&oq=mayuresh+durgule&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7Mg0IARAAGIYDGIAEGIoFMg0IAhAAGIYDGIAEGIoFMgoIAxAAGIAEGKIEMgoIBBAAGIAEGKIEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEJMTEwOTJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">( Mayuresh D )</a></p>
+</footer>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #406973;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content and footer have proper spacing */
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 10vh; /* Scales with viewport height */
+    line-height: 10vh;
+    font-size: 3vw; /* Scales with viewport width */
+    width: 100%;
+    margin-bottom: 2rem; /* Adds space after the header */
+}
+
+.choice {
+    height: calc(10vw + 50px); /* Scales dynamically with viewport width */
+    width: calc(10vw + 50px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 1rem;
+}
+
+img, .emoji {
+    height: calc(10vw + 40px); /* Matches container size */
+    width: calc(10vw + 40px);
+    object-fit: cover;
+    border-radius: 50%; /* Ensures round images/emojis */
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover, .emoji:hover {
+    transform: scale(1.1); /* Slight hover effect */
+    cursor: pointer;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw; /* Dynamic gap between choices */
+    margin: 2rem auto; /* Adds top and bottom margin */
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw; /* Space between user and computer scores */
+    margin: 2rem 0;
+}
+
+#user-score, #comp-score {
+    font-size: calc(4vw + 1rem); /* Dynamic font size */
+    color: #fff;
+}
+
+.score-board p {
+    margin: 0;
+    font-size: calc(1.5vw + 0.5rem); /* Scales with viewport */
+    color: #fff;
+}
+
+.msg-container {
+    margin: 2rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: calc(2vw + 0.5rem); /* Dynamic font size */
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0; /* Space above and below images */
+}
+
+.sps_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw; /* Dynamic gap between player images */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    margin-top: 2vh;
+}
+
+.sps {
+    display: none;
+}
+.paper {
+    height: 200px
+
+}
+
+footer {
+    background-color: #081b31;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: calc(1vw + 0.5rem);
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: lightblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Media Queries for Fine-Tuning */
+
+/* For small devices like tablets and phones */
+@media (max-width: 768px) {
+    .choice {
+        height: calc(15vw + 40px);
+        width: calc(15vw + 40px);
+    }
+
+    img, .emoji {
+        height: calc(15vw + 30px);
+        width: calc(15vw + 30px);
+    }
+
+    .choices {
+        gap: 2vw;
+    }
+
+    .score-board {
+        gap: 3vw;
+        flex-wrap: wrap;
+    }
+
+    #msg {
+        font-size: calc(3vw + 0.5rem);
+    }
+
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    #user-score, #comp-score {
+        font-size: calc(5vw + 1rem);
+    }
+    .paper{
+        height: calc(20vw + 60px);
+    }
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+    .choice {
+        height: calc(20vw + 20px);
+        width: calc(20vw + 20px);
+    }
+
+    img, .emoji {
+        height: calc(20vw + 20px);
+        width: calc(20vw + 20px);
+    }
+
+    .choices {
+        gap: 5vw;
+    }
+
+    .score-board {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    #msg {
+        font-size: calc(4vw + 0.2rem);
+        padding: 0.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 5vw;
+        height: 80px;
+        margin-bottom: 0;
+    }
+
+    #user-score, #comp-score {
+        font-size: calc(6vw + 1rem);
+    }
+    .paper{
+        height: calc(20vw + 60px);
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
