@@ -100,7 +100,7 @@ const showFinalWinner = (winner) => {
 
     const popup = document.getElementById('winnerPopup');
     const message = document.getElementById('winnerMessage');
-    message.textContent = `Congratulations ${winner}! You are the winner!`;
+    message.textContent = `Winner is ${winner} !`;
     popup.classList.remove('hidden');
 };
 
