@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPS Game</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="spsfevicon.png" type="image/x-icon">
-
 </head>
 
 <body>
     <h1>Stone Paper Scissors</h1>
     <audio id="background-music" src="soundtracks/background.mp3" loop ></audio>
-    <audio id="win-sound" src="win.mp3"></audio>
-    <audio id="lose-sound" src="draw.mp3"></audio>
-    <audio id="draw-sound" src="draw.mp3"></audio>
-    <audio id="click-sound" src="move.mp3"></audio>
+    <audio id="win-sound" src="soundtracks/win.mp3"></audio>
+    <audio id="lose-sound" src="soundtracks/draw.mp3"></audio>
+    <audio id="draw-sound" src="soundtracks/draw.mp3"></audio>
+    <audio id="click-sound" src="soundtracks/move.mp3"></audio>
 
     <div class="choices">
-        <div class="choice" id="rock"><img src="rock.png" alt=""></div>
-        <div class="choice" id="paper"><img src="paper.png" alt=""></div>
-        <div class="choice" id="scissors"><img src="scissors.png" alt=""></div>
+        <div class="choice" id="rock"><img src="img/rock.png" alt=""></div>
+        <div class="choice" id="paper"><img src="img/paper.png" alt=""></div>
+        <div class="choice" id="scissors"><img src="img/scissors.png" alt=""></div>
     </div>
     <div class="score-board">
         <div class="score">
@@ -31,7 +29,7 @@
         </div>
         <div class="score">
             <P id="comp-score">0</P>
-            <p>Comp</p>
+            <p>COMP</p>
 
         </div>
     </div>
@@ -61,6 +59,10 @@
             <img src="lose.png" alt="">
         </div>
     </div>
+    <div id="winnerPopup" class="popup hidden">
+        <h2 id="winnerMessage"></h2>
+        <button id="restartButton">Restart</button>
+      </div>      
 </body>
 <footer>
     <p id="tag">Game Developed By Dsoft <a href="https://www.google.com/search?q=mayuresh+durgule&oq=mayuresh+durgule&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7Mg0IARAAGIYDGIAEGIoFMg0IAhAAGIYDGIAEGIoFMgoIAxAAGIAEGKIEMgoIBBAAGIAEGKIEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEJMTEwOTJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">( Mayuresh D )</a></p>
